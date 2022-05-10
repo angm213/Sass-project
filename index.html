@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <script src="https://kit.fontawesome.com/76bd030981.js" crossorigin="anonymous"></script>
+  <title>SCSS Landing Page</title>
+</head>
+<body>
+  <div class="top-section">
+    <div class="top-section-content">
+      <button class="no-style">
+      <a href="#" class="phone-number">
+      <img src="/public/images/topPhone.png" /> 
+       1-800-547-1618
+      </a>
+    </button>
+    </div>
+  </div>
+  <div class="top-navbar">
+    <div class="navbar-content">
+      <a href="#"><img class="nav-bar-img" src="/public/images/nb-logo.png"/></a>
+      <div class="navbar-buttons">
+        <button class="no-style" onclick="popoverActive1()"><img src="/public/images/capterra_icon.png"/></button>
+        <div class="popover popover-ceptera">
+          <img src="/public/images/capterra-logo.png" alt="ceptera logo">
+          <img src="/public/images/capterra-star.png" alt="ceptera star">
+          <h4>5 Start Ratings from Our Customers</h4>
+          <button class="no-style popver-link" onclick="modalShow()">Request Demo to Review Live Client Examples</button>
+        </div>
+        <button class="no-style" onclick="popoverActive2()"><img src="/public/images/g2_icon.png"/></button>
+        <div class="popover popover-g2">
+          <img src="/public/images/g2-logo.png" alt="g2 logo">
+          <img src="/public/images/g2-star.png" alt="g2 star">
+          <h4>4.4 Start Ratings from Our Customers</h4>
+          <button class="no-style popover-link" onclick="modalShow()">Request Demo to Review Live Client Examples</button>
+        </div>
+        <button class="request-btn" onclick="modalShow()">Request Demo</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero-area">
+    <div class="hero-area-top-text">
+      <h1>Accelerate Your Referral Funnel</h1>
+      <h4>The First Unified Platform to Boost Lead Generation & Referrals</h4>
+      <p>Boost the Volume & Quantity of Qualified Referrals, Use Gamification to Reward <br />Success & Improve Results, Grow Your Base of Active Users. 16+ Optimized <br /> Workflows Proven to Grow Referrals. </p>
+    </div>
+    <div class="hero-area-center-text">
+      <button class="demo-button" onclick="modalShow()">Request Free Demo</button>
+    </div>
+    <div class="hero-area-bottom-card">
+      <div class="card-row">
+        <div class="card-row-img">
+          <img src="/public/images/card200.png"/>
+        </div>
+        <div class="card-row-text">
+          <h1>We stand by our Best Price Guarantee!</h1>
+          <p><img src="/public/images/check_icon.png"/> Fees of $1 Per 1000 Tracked Activities Means 400%+ ROI</p>
+          <p><img src="/public/images/check_icon.png"/> 30% Better Results & Savings of 70%+ from Any Competitor</p>
+        </div>
+      </div>
+      <div class="card-row">
+        <p class="terms-link">Show Us a Better Quote or a Better Solution - We will Give You a $200 Gift Card <a href="#" target=_blank>View Terms</a></p>
+      </div>
+      <img class="beeimage select-img" src="/public/images/bee.png"/>
+    </div>
+  </div>
+  <div class="logo-area">
+    <h2>Trusted by Today's Leading Brands</h2>
+    <div class="client-logo-slider">
+      <div class="slider-fade">
+      <div class="slider-image">
+        <img src="/public/images/cl1.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl2.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl3.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl4.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl5.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl6.png" />
+      </div>
+    </div>
+    <div class="slider-fade-2">
+      <div class="slider-image">
+        <img src="/public/images/cl7.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl8.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl9.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl10.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl11.png" />
+      </div>
+      <div class="slider-image">
+        <img src="/public/images/cl12.png" />
+      </div> 
+    </div> 
+    </div>
+  </div>
+  <div class="slider-area-wrapper">
+  <ul class="slick-arrows">
+    <li class="prev"><i class="fas fa-chevron-left"></i> Prev</li>
+    <li class="next">Next <i class="fas fa-chevron-right"></i></li>
+  </ul>
+  <div class="slider-area">
+    <div class="slider-item">
+      <img src="/public/images/screen-01.png" />
+    </div>
+    <div class="slider-item">
+      <img src="/public/images/screen-02.png" />
+    </div>
+    <div class="slider-item">
+      <img src="/public/images/screen-03.png" />
+    </div>
+    <div class="slider-item">
+      <img src="/public/images/screen-04.png" />
+    </div>
+    <div class="slider-item">
+      <img src="/public/images/screen-05.png" />
+    </div>
+    <div class="slider-item">
+      <img src="/public/images/screen-06.png" />
+    </div>
+  </div>
+</div>
+  <div class="tabs-section">
+    <div class="tabs-text">
+      <h2>Workflows to Accelerate Your Success</h2>
+    </div>
+    <div class="tabs-section-tab">
+      <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'salesIncrease')">Sales <br/>Increase</button>
+        <button class="tablinks" onclick="openTab(event, 'boostIncentives')">Boost <br/>Incentives</button>
+        <button class="tablinks" onclick="openTab(event, 'surpriseDelight')">Surprise <br/>& Delight</button>
+        <button class="tablinks" onclick="openTab(event, 'createAddedValue')">Create <br/>Added Value</button>
+        <button class="tablinks" onclick="openTab(event, 'generateExcitement')">Generate <br/>Excitement</button>
+        <button class="tablinks" onclick="openTab(event, 'boostEventReferrals')">Boost <br/>Event Referrals</button>
+        <button class="tablinks" onclick="openTab(event, 'leverageCompanyNews')">Leverage <br/>Company News</button>
+        <button class="tablinks" onclick="openTab(event, 'choiceReward')">Choice is <br/>a reward</button>
+      </div>
+      <div id="salesIncrease" class="tabcontent">
+        <div class="tabs-section-tab-left">
+          <h1>Multiply Referrals Using Gamification</h1>
+          <p>Now you can <strong>increase your volume of qualified referrals</strong>, and the new sales that they bring, using <strong>proven gamification workflows</strong>. Encourage <strong>referrals for specific products</strong>, whole categories, limited-time offers, and more. Offer <strong>tiered incentives</strong> to reward your top referrers and <strong>non-monetary motivators</strong> proven to increase customer engagement and activation.</p>
+          <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+        </div>
+      <div class="tabs-section-tab-right">
+        <img src="public/images/01 increase sale.png" />
+      </div>
+    </div>
+    <div id="boostIncentives" class="tabcontent">
+      <div class="tabs-section-tab-left">
+        <h1>Increase Referrals and Boost Sales</h1>
+        <p>Prompt your current customers to <strong>share their most recent purchase</strong> with a great reward for them, and a <strong>promotional offer for their friends, family and colleagues</strong>. The reward for your current customer can be automatically triggered and <strong>includes smart controls</strong> to ensure a valid new purchase. And, you can even provide multi-level referral rewards too.</p>
+        <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+      </div>
+    <div class="tabs-section-tab-right">
+      <img src="public/images/02 boost daily revenue.png" />
+    </div>
+  </div>
+  <div id="surpriseDelight" class="tabcontent">
+    <div class="tabs-section-tab-left">
+      <h1>Deploy Machine Learning for Referrals</h1>
+      <p>Take referrals to the next level by <strong>utilizing predictive insights</strong> through machine learning to <strong>transform how you identify customers</strong> likely to refer and engage your top performing referrers. <strong>Group your customers into user segments</strong> based on their likelihood to refer, and offer incentives <strong>personalized to each tier of user</strong> for a near-guaranteed boost in referrals.</p>
+      <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+    </div>
+  <div class="tabs-section-tab-right">
+    <img src="public/images/03 value of saving.png" />
+  </div>
+</div>
+<div id="createAddedValue" class="tabcontent">
+  <div class="tabs-section-tab-left">
+    <h1>Demonstrate Your Customer Benefits</h1>
+    <p>Gain a competitive edge by <strong>leveraging the power of data</strong>. Administer the value tracker workflow to <strong>automatically track, calculate and display</strong> the overall lifetime benefit of <strong>every promotion and discount offer</strong> used by your customers, including their referral rewards. Plus, you can always include a call to action to continue referring for even greater rewards.</p>
+    <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+  </div>
+<div class="tabs-section-tab-right">
+  <img src="public/images/04 increase cross sale.png" />
+</div>
+</div>
+<div id="generateExcitement" class="tabcontent">
+  <div class="tabs-section-tab-left">
+    <h1>Boost Your Referrals with Sweepstakes</h1>
+    <p>With the sweepstakes workflow, you can now <strong>increase excitement</strong> and create a near guaranteed <strong>boost of referrals</strong> for your business. Create a structure that rewards customers with a sweepstake entry for every referral. Then, add a separate sweepstakes, featuring <strong>a great reward</strong>, with entries reserved only for customers whose referrals proved successful.</p>
+    <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+  </div>
+<div class="tabs-section-tab-right">
+  <img src="public/images/05 charity drive.png" />
+</div>
+</div>
+<div id="boostEventReferrals" class="tabcontent">
+  <div class="tabs-section-tab-left">
+    <h1>Create a Successful, Buzz Worthy Experience</h1>
+    <p><strong>Encourage valuable connections</strong> at trade shows and <strong>boost interest and attendance</strong> for your own online and in-person events by deploying the events workflows. Motivate attendees to rate, review, and <strong>refer new products and just launched services</strong>, and invite them to share their experiences with <strong>multiple referral touchpoints</strong> for exciting and successful events.</p>
+    <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+  </div>
+<div class="tabs-section-tab-right">
+  <img src="public/images/06 motivate customer.png" />
+</div>
+</div>
+<div id="leverageCompanyNews" class="tabcontent">
+  <div class="tabs-section-tab-left">
+    <h1>Turn Announcements into Opportunities</h1>
+    <p>Do more than inform your customers, <strong>engage them</strong> with the newsfeed workflow and <strong>generate even more referrals</strong>. The workflow delivers important information exactly where and how you want, along with a <strong>gamified incentive for sharing</strong>, such as a premier profile badge. Plus, you can include polling to boost interest, short quizzes for information capture, and much more.</p>
+    <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+  </div>
+<div class="tabs-section-tab-right">
+  <img src="public/images/07 brand recognition.png" />
+</div>
+</div>
+<div id="choiceReward" class="tabcontent">
+  <div class="tabs-section-tab-left">
+    <h1>Power Referrals with Personalized Redemption Links</h1>
+    <p>Provide a <strong>choice of incentives</strong> to increase the <strong>quality and quantity of referrals</strong>. From no-cost contest and sweepstakes entries, to your own low-cost branded merchandise, discounts on future purchases, gift cards and other direct cash incentives, and even big ticket items - the workflow makes it easy for you to <strong>always include the most effective incentive</strong>.</p>
+    <p><button class="demo-button" onclick="modalShow()">Request Demo</button></p>
+  </div>
+<div class="tabs-section-tab-right">
+  <img src="public/images/08 event participation.png" />
+</div>
+</div>
+  </div>
+  </div>
+    <div class="testimonials-section">
+      <div class="testimonials-box">
+        <div class="testimonials-box-image">
+          <img src="/public/images/testimony-img.png"/>
+        </div>
+      <div class="testimonials-box-text">
+        <h2>"NextBee has been tremendous in putting in place all the variables for us to be successful!”</h2>
+        <h6>Mary Veloske <br /> <span>Vice President</span></h6>
+        <a href="#video-modal" class="video-btn" onclick="vmodalShow()">
+          <span>
+          <i class="fas fa-play"></i> 
+          <p>Watch&nbsp;video</p>
+        </span>
+        </a>
+      </div> 
+    </div> 
+  </div>
+  <div class="features-section">
+    <div class="features-section-text">
+      <h2>20+ Features for Generating <br /> More Referrals</h2>
+    </div>
+    <div class="features-boxes">
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p1.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Advanced Lifecycle Mapping for a Sustained Referral Boost</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>You can target multiple segments of customers to increase qualified referrals, new product adoption, and boost sales volume through AI-driven personalization.</p>
+        </div>
+      </div>
+      <div class="features-box">
+        <div class="features-box-img">
+          <img src="/public/images/p2.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Single Sign On for a Seamless Customer Experience</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>SSO configuration enables full integration with your existing website, including current customer accounts and your shopping cart, for a truly seamless experience.</p>
+        </div>
+      </div>
+      <div class="features-box">
+        <div class="features-box-img">
+        <img src="/public/images/p3.png"/>
+      </div>
+      <div class="features-box-title">
+        <h4>Build Great Sales Teams</h4>
+      </div>
+      <div class="feature-box-text">
+        <p>Boost retention and improve sales by enabling team members to share recognition of their success with each other through the peer recognition workflow.</p>
+      </div>
+    </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p4.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Encourage Sharing Testimonials & Reviews</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Put your best feedback to work by encouraging product referrals and the sharing of great reviews using gamified incentives to boost participation.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p5.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Provide Real-Time Support with Resource Hosting</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Keep your customers engaged, actively referring, while increasing brand affinity by incentivizing engagement with how-to videos, product manuals, and other resources.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p21.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Custom Features</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>With our programmable data model and open APIs, if your business process requires a custom feature, we can have in the platform in days if not hours a fully custom feature delivered.</p>
+        </div>
+      </div>
+    </div>
+    <div class="features-boxes-toggle">
+      <div class="features-boxes">
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p7.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Deepen Customer Ties with Charity Drives</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Encourage more referrals by including an invitation to participate in supporting a charity drive. You identify a cause, set a goal, and track participation, including referrals.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p8.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Gain Essential Data with Enhanced Customer Profiles</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Captures a wealth of customer data, useful for improving segmentation and targeting, and incentivize that data capture with checklists, a progress bar, and rewards.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p9.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Activate Customers Using Sweepstakes & Contests</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Sweepstakes and contests offer a great way for you boost referrals. You can even auto enroll a select segment of users as recognition for their current efforts.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p13.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Gain Insights Using Polls</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Easily poll your customers on new products and features, current processes, and future efforts, and automatically push a referral incentive for those who rate you positively</p>
+        </div>
+        </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p14.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Leverage Your News to Boost Referrals</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Gain more customers by motivating current customers to share your company’s latest news and product announcements, along with a potential reward for both users.</p>
+        </div>
+        </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p15.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Broaden Your Audience Using Social Buzz</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Encourage and reward your customers for referring your brand and products on their preferred social network, and use gamification to boost effectiveness.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p16.png"/>
+          </div>
+          <div class="features-box-title">
+          <h4>Boost Promotions with Limitless Reward Options</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Keep your customers referring by using a flexible rewards structure. Offer discounts or credits, egift cards, physical items, and more to make their choice the very first reward.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p17.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Increase Referrals with Product & Brand Training</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Incentivize product micro-training and brand tutorials and motivate your customers to increase their referral rate. Gamify learning for even greater results, fast.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p18.png"/>
+        </div>
+          <div class="features-box-title">
+          <h4>Capture Customer Ideas to Boost Referrals</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Capture valuable insights from those who use your products regularly, and trigger an incentive to refer your brand to those customers who actively engage.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p19.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Reward Referral Success Using Flexible Rules</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>With our Flexible Rules Configurator, you can grant bonuses for customers who successfully refer at a high rate or generate valuable interest on specific products.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p11.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Operate Safely Using Built-In Anti-Fraud Controls</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Built-in safeguards help stop, identify, and negate program misuse and ensure every purchase, credit, segment, channel, activity and reward is tracked and monitored.</p>
+        </div>
+      </div>
+      <div class="features-box">
+          <div class="features-box-img">
+          <img src="/public/images/p20.png"/>
+        </div>
+        <div class="features-box-title">
+          <h4>Seamless Means Everything Just Works</h4>
+        </div>
+        <div class="feature-box-text">
+          <p>Easily and quickly integrate with all major CRM, ESP, eCommerce and similar platforms. And, we will work to integrate with your in-house systems to track and optimize every valuable interaction and activity.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+      <button class="toggle-features demo-button" onclick="featuresShow()">View More</button>
+      <button class="toggle-features-hide demo-button" onclick="featuresHide()">View Less</button>
+    </div>
+  </div>  
+  <div class="sub-footer">
+    <div class="sub-footer-content">
+      <div class="sub-footer-left">
+        <h2>Ready to Accelerate Your Referral Efforts?</h2>
+        <p>We understand every client is unique and need strategy support  to make sure you launch the most optimized program in efficient way. Choose the best next step that aligns with your current priorities.</p>
+        <div class="sub-footer-buttons">
+          <ul>
+            <li><button onclick="modalShow()" class="button-modal-active">I want see platform demo</button></li>
+            <li><button onclick="modalShow()" class="button-modal">I want to request a free POC</button></li>
+            <li><button onclick="modalShow()" class="button-modal">I want to get ROI analysis</button></li>
+            <li><button onclick="modalShow()" class="button-modal">I want to get strategic advice</button></li>
+          </ul>
+        </div>
+        <h5>Looking for something custom? Call us <a href="#">1-800-547-1618</a></h5>
+      </div>
+      <div class="sub-footer-right">
+        <video autoplay muted loop>
+          <source src="/public/assets/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+    <div class="footer-container">
+      <div class="footer-container-nav">
+        <h5>THE COMPANY</h5>
+        <ul class="footer-list">
+          <li><a href="#" target="_blank">Our Story</a></li>
+          <li><a href="#" target="_blank">Careers</a></li>
+          <li><a href="#" target="_blank">Resources</a></li>
+          <li><a href="#" target="_blank">Contact</a></li>
+          <li><a href="#" target="_blank">Privacy Policy</a></li>
+          <li><a href="#" target="_blank">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-container-nav">
+        <h5>THE PRODUCTS</h5>
+        <ul class="footer-list">
+          <li><a href="#" target="_blank">CX360</a></li>
+          <li><a href="#" target="_blank">Catalyst</a></li>
+          <li><a href="#" target="_blank">Symbio</a></li>
+          <li><a href="#" target="_blank">Spotlights</a></li>
+        </ul>
+      </div>
+      <div class="footer-container-nav">
+        <h5>OUR OFFERINGS</h5>
+        <ul class="footer-list">
+          <li><a href="#" target="_blank">Loyalty Software Platform</a></li>
+          <li><a href="#" target="_blank">Referral Marketing Platform</a></li>
+          <li><a href="#" target="_blank">Customer Advocacy Platform</a></li>
+          <li><a href="#" target="_blank">Customer Rewards Platform</a></li>
+          <li><a href="#" target="_blank">Customer Acquisition Platform</a></li>
+          <li><a href="#" target="_blank">Franchise Marketing Platform</a></li>
+          <li><a href="#" target="_blank">Customer Retention Platform</a></li>
+          <li><a href="#" target="_blank">Retail Employee App</a></li>
+        </ul>
+      </div>
+      <div class="footer-container-nav">
+        <h5>&nbsp; </h5>
+        <ul class="footer-list">
+          <li><a href="#" target="_blank">B2B Loyalty Program</a></li>
+          <li><a href="#" target="_blank">Gamification Platform</a></li>
+          <li><a href="#" target="_blank">Offer Management Platform</a></li>
+          <li><a href="#" target="_blank">Employee Rewards Platform</a></li>
+          <li><a href="#" target="_blank">Alumni Community Platform</a></li>
+          <li><a href="#" target="_blank">Channel Management Platform</a></li>
+          <li><a href="#" target="_blank">Guest Loyalty App</a></li>
+          <li><a href="#" target="_blank">Factory Worker App</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-no-margin">
+    <div class="footer">
+    <div class="footer-text">
+      <p>© 2022 Next Bee Corporation. All rights reserved. NextBee and BuzzWidgets are trademarks of Next Bee Corporation.</p>
+    </div>
+    <div class="footer-image">
+      <a href="#" target=_blank><img src="/public/images/seal.png"/></a>
+    </div>
+  </div>
+  </div>
+  <div class="chat-button">
+    <button class="chat-bttn no-style">
+      <i class="fa-solid fa-message"></i>
+      <div class="red-circle"></div>
+    </button>
+  </div>
+  <div class="cookie-msg">
+    <a href="#" target="_blank">
+      <div>
+        <img src="/public/images/cookies-img.png" />
+      </div>
+      <h6>Our&nbsp;Cookie&nbsp;Policy</h6>
+    </a>
+  </div>
+  <div class="demo-modal">
+    <div class="demo-modal-content">
+      <div class="demo-modal-header">
+        <h5>Get the Program Setup On Your Terms</h5>
+        <span class="close" onclick="modalHide()">&times;</span> 
+      </div>
+      <form class="demo-modal-form">
+        <div class="text-row">
+          <div class="text-modal">
+            <h3>Step 1 - Submit Requirements</h3>
+          </div>
+          <div class="link-modal">
+            <a href="#">1-800-547-1618</a>
+          </div>
+        </div>
+          <div class="modal-row">
+            <div class="form-input">
+              <input type="text" name="dfname" placeholder="First Name*">
+            </div>
+            <div class="form-input">
+              <input type="text" name="dlname" placeholder="Last Name*">
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="form-input">
+              <input type="text" name="demail" placeholder="Your Email*">
+            </div>
+            <div class="form-input">
+              <input type="text" name="dnumber" placeholder="Your Phone*">
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="form-input">
+              <textarea type="text" placeholder="Requirement Details*" name="drequirements"></textarea>
+            </div>
+          </div>
+      </form>
+      <div class="demo-footer">
+        <div class="modal-footer-text">
+          <p>Step 2 - Schedule Appointment</p>
+        </div>
+        <div class="modal-btn">
+          <button class="demo-modal-btn">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo-modal" id="video-modal">
+    <div class="demo-modal-content video-content">
+      <span class="close" onclick="vmodalHide()">&times;</span>
+      <!-- <video width="560" height="315" controls>
+        <source src="https://www.youtube.com/watch?v=rMBMoD28Q_0&ab_channel=JosefsList" type="video/mp4">
+      </video> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rMBMoD28Q_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">$('.slider-area').slick({    
+        prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+    });
+  </script>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

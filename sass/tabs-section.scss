@@ -1,0 +1,78 @@
+@import '_variables';
+
+
+.tabs-section {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    h2 {
+        color: $primary-text;
+        font-size: 2rem;
+        margin: 1rem auto;
+    }
+    .tabs-section-tab {
+        padding: 2rem 0;
+        .tab {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            border-bottom: 1px solid $tab-border;
+            & button {
+                flex-flow: row nowrap;
+                color: $tab-buttons;
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 0 10px 20px 0;
+                font-size: 14px;
+                letter-spacing: normal;
+                text-align: left;
+            }
+            button:hover {
+                color: $demo_button;
+            }
+            .active {
+                color: $demo_button;
+                border-bottom: 3px solid $demo_button;
+            }
+        }
+        .tabcontent {
+            display: none;
+            .tabs-section-tab-left {
+                text-align: left;
+                padding: 0 0.938rem;
+                flex: 0 1 50%;
+                h1 {
+                    color: $tab-primary;
+                    font-size: 2rem;
+                    padding: 1.875rem 0 0.938rem 0;
+                    margin: 1rem 0;
+                    background-image: url(/public/images/tabbottomline.png);
+                    background-repeat: no-repeat;
+                    background-position-y: bottom;
+                }
+                p {
+                    color: $navlinks;
+                    // font-family:;
+                    padding-top: 20px;
+                    margin: 10px 0; 
+                    font-size: 0.9rem;
+                }
+            }
+            .tabs-section-tab-right {
+                padding: 0 0.938rem;
+                flex: 0 1 50%;
+                 img {
+                     width: 90%;
+                     padding-top: 20px;
+                }
+            }
+            // .active {
+            //     display: flex;
+            // }
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+@import '_variables';
+
+.slider-area-wrapper {
+    width: 60%;
+    margin: 0 auto 2rem auto;
+    cursor: grab;
+    padding-top: 2rem;
+    .slick-arrows {
+        position: relative;
+        list-style: none;
+        width: 80%;
+        padding-top: 1rem;
+        margin: 0 auto -3.7rem auto;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        li {
+            color: $background-blue;
+            cursor: pointer;
+            padding-left: 20px;
+            &:hover {
+                color: $demo_button
+            }
+        }
+    }
+}
+
+

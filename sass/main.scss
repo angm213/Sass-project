@@ -1,0 +1,86 @@
+@import '_variables';
+@import '_utilities';
+@import 'hero';
+@import 'logo-area';
+@import 'features';
+@import 'sub-footer';
+@import 'footer-container';
+@import 'testimonials';
+@import 'tabs-section';
+@import 'slider-area';
+@import 'modal-utilities';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25px;
+    width: 100%;
+    .top-section {
+        background-color: $background-blue;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 0 10px 0;
+        .top-section-content {
+           margin-right: 18.883vw;
+           display: flex;
+           justify-content: flex-end;
+           color: $background-white;
+           & a {
+               text-decoration: none;
+               color: $background-white;
+               font-size: 14px;
+               font-weight: 600;
+           }
+           & a:hover {
+               color: $demo_button;
+           }
+        }
+    }
+    h1 {
+        color: $primary-text;
+        font-size: 3.3rem;
+        font-weight: 700;
+    }
+    h4 {
+        color: $primary-text;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        color: $secondary-text;
+    }
+    .footer-no-margin {
+        background-color: $primary-text;
+        padding: 15px 0;
+        .footer {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+            .footer-text {
+                & p {
+                color: $footer-text;
+                font-size: 12px;
+                margin: 0;
+                line-height: 1.981rem;
+                }
+            }
+            .footer-image {
+                width: 100px;
+                margin-bottom: -6px;
+                & a { 
+                    text-decoration: none;
+                    height: min-content;
+                }
+            }
+        }
+    }
+
+}

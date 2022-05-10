@@ -1,0 +1,104 @@
+@import '_variables';
+
+.hero-area {
+    background: $background-grey !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0;
+    line-height: 45px;
+    .hero-area-top-text {
+        background: url(/public/images/head_shape.png) no-repeat top center;
+        background-size: contain;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        width: 100%;
+        & h1 {
+            margin: 0;
+            font-weight: 700;
+        }
+        & h4 {
+            margin: 16px 0;
+        }
+        & p {
+            margin: 10px 7.5vw;
+            letter-spacing: normal;
+        }
+    }
+    .hero-area-center-text {
+        margin-top: 35px;
+        & .demo-button {
+            padding: 15px 35px;
+        }
+    }
+    .hero-area-bottom-card {
+        line-height: 14px;
+        width: 40%;
+        background-color: $background-white;
+        margin: 60px auto;
+        padding: 20px;
+        border: 1px solid $border;
+        border-radius: 15px;
+        .card-row {
+            display: flex;
+            .card-row-img {
+                max-width: 100%;
+                vertical-align: middle;
+                padding: 0 15px;
+                @media (min-width: 768px) {
+                    img {
+                        max-height: 60px;
+                    }
+                }
+            }
+            .card-row-text {
+                padding: 0 15px;
+                & h1 {
+                    font-size: 1.1rem;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                }
+                & p {
+                    margin: 10px 0;
+                    line-height: 1.4rem;
+                    font-size: 1rem;
+                }
+            }
+            .terms-link {      
+                padding-top: 15px;
+                color: $terms-link;
+                font-size: 14px;
+                letter-spacing: normal;
+                line-height: 25px;
+                text-align: center;
+                font-style: italic;
+                & a {
+                    font-size: 11px;
+                    padding-top: 5px;
+                    color: $terms-link-a;
+                }
+            }
+        }
+        .card-row:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid $border;
+            margin-top: 10px;
+        }
+        .beeimage {
+            position: absolute;
+            left: 1275px;
+            top: 465px;
+            z-index: 1;
+        }
+        .beeimage-translated {
+            position: absolute;
+            left: 1275px;
+            top: 400px;
+            z-index: 1;
+        }
+    }
+}
