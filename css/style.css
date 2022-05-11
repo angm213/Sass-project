@@ -31,6 +31,11 @@
   outline: inherit;
 }
 
+.top-header {
+  position: relative;
+  height: 66px;
+}
+
 .top-navbar {
   background-color: #f7f9fa;
   border-bottom: 1px solid #e6e6e8;
@@ -251,21 +256,30 @@ img {
 
 .popover-ceptera {
   position: absolute;
-  top: 15%;
-  left: 60%;
+  top: 3.2rem;
+  right: 28.9rem;
   opacity: 0;
 }
 
 .popover-g2 {
   position: absolute;
-  top: 15%;
-  left: 67%;
+  top: 3.2rem;
+  right: 20.5rem;
   opacity: 0;
 }
 
-.popover-active {
-  transform: scale(1);
-  display: block;
+.pop-1-translated {
+  position: absolute;
+  top: 4rem;
+  right: 39.7rem;
+  opacity: 0;
+}
+
+.pop-2-translated {
+  position: absolute;
+  top: 4rem;
+  right: 31.5rem;
+  opacity: 0;
 }
 
 .hero-area {
@@ -362,12 +376,6 @@ img {
   position: absolute;
   left: 1275px;
   top: 465px;
-  z-index: 1;
-}
-.hero-area .hero-area-bottom-card .beeimage-translated {
-  position: absolute;
-  left: 1275px;
-  top: 400px;
   z-index: 1;
 }
 

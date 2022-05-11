@@ -1,4 +1,6 @@
-var popOver = [document.querySelector(".popover-ceptera"), document.querySelector(".popover-g2")];
+// variables
+
+var popOver = [document.querySelector(".pop-1"), document.querySelector(".pop-2")];
 var topNav = document.querySelector(".top-navbar");
 var requestBtn = document.querySelector(".request-btn");
 var beeImg = document.querySelector(".select-img");
@@ -12,18 +14,47 @@ var vModal = document.querySelector("#video-modal");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-   if (document.documentElement.scrollTop > 50) {
+  if (document.documentElement.scrollTop > 50) {
     topNav.classList.add("sticky");
     requestBtn.style.display = "inline-block";
-    beeImg.classList.remove("beeimage");
-    beeImg.classList.add("beeimage-translated");
-   } else {
+    popOver[0].classList.remove("popover-ceptera");
+    popOver[0].classList.add("pop-1-translated");
+    popOver[1].classList.remove("popover-g2");
+    popOver[1].classList.add("pop-2-translated");
+  } else {
     topNav.classList.remove("sticky");
     requestBtn.style.display = "none";
-    beeImg.classList.remove("beeimage-translated");
-    beeImg.classList.add("beeimage");
-   }
- }
+    popOver[0].classList.remove("pop-1-translated");
+    popOver[0].classList.add("popover-ceptera");
+    popOver[1].classList.remove("pop-2-translated");
+    popOver[1].classList.add("popover-g2");
+  }
+}
+
+//modal JS
+
+function modalShow() {
+  demoModal.style.display = "block";
+}
+
+function modalHide() {
+  demoModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if ((event.target == demoModal) || (event.target == vModal)) {
+    demoModal.style.display = "none";
+    vModal.style.display = "none";
+  }
+}
+
+function vmodalShow() {
+  vModal.style.display = "block";
+}
+
+function vmodalHide() {
+  vModal.style.display = "none";
+}
 
 // tabs-section JS
 
@@ -67,57 +98,14 @@ function featuresHide() {
   document.querySelector(".features-section").scrollIntoView(true);
 }
 
-//modal JS
-
-
-function modalShow() {
-  demoModal.style.display = "block";
-}
-
-function modalHide() {
-  demoModal.style.display = "none";
-}
-
-
-window.onclick = function(event) {
-  console.log(event.target);
-  if (event.target == demoModal) {
-    demoModal.style.display = "none";
-  }
-}
-
-function vmodalShow() {
-  vModal.style.display = "block";
-}
-
-function vmodalHide() {
-  vModal.style.display = "none";
-}
-
-// document.addEventListener(
-//   "click",
-//   function(event) {
-//     // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-//     if (
-//       event.target.matches(".close") ||
-//       !event.target.closest(".demo-modal-header")
-//     ) {
-//       modalHide()
-//     }
-//   },
-//   false
-// )
-
 //popovers JS
 
 function popoverActive1() {
   popOver[0].style.opacity = ((popOver[0].style.opacity != "1") ? "1" : "0")
   popOver[1].style.opacity = ((popOver[1].style.opacity != "0") ? "0" : "0")
-  // document.querySelector(".popover-g2").style.opacity = ((document.querySelector(".popover-g2").style.opacity != "1") ? "1" : "0")
 }
 
 function popoverActive2() {
-  // alert(document.querySelector(".popover-g2"));
   popOver[0].style.opacity = ((popOver[0].style.opacity != "0") ? "0" : "0")
   popOver[1].style.opacity = ((popOver[1].style.opacity != "1") ? "1" : "0")
 }
