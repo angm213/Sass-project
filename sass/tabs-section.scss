@@ -49,7 +49,9 @@
                     font-size: 2rem;
                     padding: 1.875rem 0 0.938rem 0;
                     margin: 1rem 0;
-
+                    background-image: url(public/images/tabbottomline.png);
+                    background-repeat: no-repeat;
+                    background-position-y: bottom;
                 }
                 p {
                     color: $navlinks;
