@@ -4,8 +4,7 @@
     text-align: center;
     padding: 32px 0;
     width: 62%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     h2 {
         margin: 32px 0;
     }
@@ -28,6 +27,7 @@
         }    
     }
     .client-logo-slider {
+        margin: auto;
         position: relative;
         width: 69.25rem;
         height: 3.688rem;
