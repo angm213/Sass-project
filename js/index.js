@@ -101,11 +101,11 @@ function featuresHide() {
 //popovers JS
 
 function popoverActive1() {
-  popOver[0].style.opacity = ((popOver[0].style.opacity != "1") ? "1" : "0")
-  popOver[1].style.opacity = ((popOver[1].style.opacity != "0") ? "0" : "0")
+  popOver[0].style.display = ((popOver[0].style.display != "block") ? "block" : "none")
+  popOver[1].style.display = ((popOver[1].style.display != "none") ? "none" : "none")
 }
 
 function popoverActive2() {
-  popOver[0].style.opacity = ((popOver[0].style.opacity != "0") ? "0" : "0")
-  popOver[1].style.opacity = ((popOver[1].style.opacity != "1") ? "1" : "0")
+  popOver[0].style.display = ((popOver[0].style.display != "none") ? "none" : "none")
+  popOver[1].style.display = ((popOver[1].style.display != "block") ? "block" : "none")
 }

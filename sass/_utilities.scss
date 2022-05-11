@@ -211,9 +211,6 @@ img {
 
     transform: scale(1);
 	transform-origin: top left;
-	display: block;
-
-    z-index: 999;
 
     img {
         padding-left: .938rem;
@@ -251,29 +248,30 @@ img {
 }
 
 .popover-ceptera {
-	position: absolute;
-    top: 3.2rem;
+	position: fixed;
+    top: 6.2rem;
 	right: 28.9rem;
-    opacity: 0;
+    display: none;
+    z-index: 10;
 }
 
 .popover-g2 {
-	position: absolute;
-    top: 3.2rem;
+	position: fixed;
+    top: 6.2rem;
 	right: 20.5rem;
-    opacity: 0;
+    display: none;
 }
 
 .pop-1-translated {
-	position: absolute;
-    top: 4rem;
+	position: fixed;
+    top: 3.7rem;
 	right: 39.7rem;
-    opacity: 0;
+    display: none;
 }
 
 .pop-2-translated {
-    position: absolute;
-    top: 4rem;
+    position: fixed;
+    top: 3.7rem;
 	right: 31.5rem;
-    opacity: 0;
+    display: none;
 }
