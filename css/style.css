@@ -391,12 +391,18 @@ img {
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity: 0;
   }
 }
 @keyframes fade-out-2 {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -755,7 +761,7 @@ img {
   font-size: 2rem;
   padding: 1.875rem 0 0.938rem 0;
   margin: 1rem 0;
-  background-image: url(/public/images/tabbottomline.png);
+  background-image: url("public/images/tabbottomline.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
