@@ -212,6 +212,8 @@ img {
     transform: scale(1);
 	transform-origin: top left;
 
+    z-index: 10;
+
     img {
         padding-left: .938rem;
     }
@@ -252,7 +254,6 @@ img {
     top: 6.2rem;
 	right: 28.9rem;
     display: none;
-    z-index: 10;
 }
 
 .popover-g2 {
