@@ -223,6 +223,7 @@ img {
   transition-timing-function: ease;
   transform: scale(1);
   transform-origin: top left;
+  z-index: 10;
 }
 .popover img {
   padding-left: 0.938rem;
@@ -263,7 +264,6 @@ img {
   top: 6.2rem;
   right: 28.9rem;
   display: none;
-  z-index: 10;
 }
 
 .popover-g2 {
@@ -271,7 +271,6 @@ img {
   top: 6.2rem;
   right: 20.5rem;
   display: none;
-  z-index: 10;
 }
 
 .pop-1-translated {
@@ -417,7 +416,7 @@ img {
 .logo-area {
   text-align: center;
   padding: 32px 0;
-  width: 62%;
+  width: 100%;
   margin: auto;
 }
 .logo-area h2 {
