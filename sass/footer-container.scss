@@ -5,6 +5,9 @@
     margin: auto;
     padding: 2rem 0;
     display: flex;
+    @media (max-width: $tablet-breakpoint) {
+        width: 90%;
+    }
     .footer-container-nav {
         
         flex: 1 0 10%;

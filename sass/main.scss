@@ -26,10 +26,13 @@ body {
         margin-right: auto;
         padding: 10px 0 10px 0;
         .top-section-content {
-           margin-right: 18.883vw;
+           margin-right: 19.8vw;
            display: flex;
            justify-content: flex-end;
            color: $background-white;
+           @media (max-width: $tablet-breakpoint) {
+            margin-right: 2.5rem;
+            }
            & a {
                text-decoration: none;
                color: $background-white;

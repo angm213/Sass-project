@@ -50,6 +50,12 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .top-navbar .navbar-content {
+    width: 90%;
+    justify-content: space-between;
+  }
+}
 .top-navbar .navbar-content a {
   height: min-content;
   vertical-align: middle;
@@ -265,6 +271,7 @@ img {
   top: 6.2rem;
   right: 20.5rem;
   display: none;
+  z-index: 10;
 }
 
 .pop-1-translated {
@@ -291,12 +298,17 @@ img {
   line-height: 45px;
 }
 .hero-area .hero-area-top-text {
-  background: url(/public/images/head_shape.png) no-repeat top center;
+  background: url("https://angm213.github.io/Sass-project/public/images/head_shape.png") no-repeat top center;
   background-size: contain;
   text-align: center;
   position: relative;
   margin: auto;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .hero-area .hero-area-top-text {
+    width: 60%;
+  }
 }
 .hero-area .hero-area-top-text h1 {
   margin: 0;
@@ -323,18 +335,31 @@ img {
   padding: 20px;
   border: 1px solid #e6e6e8;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .hero-area .hero-area-bottom-card {
+    width: 50%;
+  }
 }
 .hero-area .hero-area-bottom-card .card-row {
   display: flex;
+}
+@media (max-width: 768px) {
+  .hero-area .hero-area-bottom-card .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .hero-area .hero-area-bottom-card .card-row .card-row-img {
   max-width: 100%;
   vertical-align: middle;
   padding: 0 15px;
 }
-@media (min-width: 768px) {
-  .hero-area .hero-area-bottom-card .card-row .card-row-img img {
-    max-height: 60px;
+@media (max-width: 768px) {
+  .hero-area .hero-area-bottom-card .card-row .card-row-img {
+    padding-bottom: 1.5rem;
   }
 }
 .hero-area .hero-area-bottom-card .card-row .card-row-text {
@@ -350,6 +375,11 @@ img {
   margin: 10px 0;
   line-height: 1.4rem;
   font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .hero-area .hero-area-bottom-card .card-row .card-row-text {
+    text-align: center;
+  }
 }
 .hero-area .hero-area-bottom-card .card-row .terms-link {
   padding-top: 15px;
@@ -376,6 +406,12 @@ img {
   left: 1275px;
   top: 465px;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  .hero-area .hero-area-bottom-card .beeimage {
+    position: inherit;
+    margin: auto;
+  }
 }
 
 .logo-area {
@@ -412,7 +448,7 @@ img {
 .logo-area .client-logo-slider {
   margin: auto;
   position: relative;
-  width: 69.25rem;
+  max-width: 69.25rem;
   height: 3.688rem;
   background-color: #fff;
   border-radius: 5px;
@@ -592,6 +628,11 @@ img {
   padding: 2rem 0;
   display: flex;
 }
+@media (max-width: 768px) {
+  .footer-container {
+    width: 90%;
+  }
+}
 .footer-container .footer-container-nav {
   flex: 1 0 10%;
 }
@@ -761,7 +802,7 @@ img {
   font-size: 2rem;
   padding: 1.875rem 0 0.938rem 0;
   margin: 1rem 0;
-  background-image: url("public/images/tabbottomline.png");
+  background-image: url("https://angm213.github.io/Sass-project/public/images/tabbottomline.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
@@ -999,10 +1040,15 @@ body .top-section {
   padding: 10px 0 10px 0;
 }
 body .top-section .top-section-content {
-  margin-right: 18.883vw;
+  margin-right: 19.8vw;
   display: flex;
   justify-content: flex-end;
   color: #fff;
+}
+@media (max-width: 768px) {
+  body .top-section .top-section-content {
+    margin-right: 2.5rem;
+  }
 }
 body .top-section .top-section-content a {
   text-decoration: none;
