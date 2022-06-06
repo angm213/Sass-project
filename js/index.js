@@ -58,10 +58,10 @@ function vmodalHide() {
 
 // tabs-section JS
 
-function myFunction(evt) {
-  document.getElementById("salesIncrease").style.display = "flex";
-  evt.currentTarget.className += " active";
-}
+// function myFunction(evt) {
+//   document.getElementById("salesIncrease").style.display = "flex";
+//   evt.currentTarget.className += " active";
+// }
 
 window.onload = myFunction();
 
@@ -81,6 +81,21 @@ function openTab(evt, cityName) {
 
     document.getElementById(cityName).style.display = "flex";
     evt.currentTarget.className += " active";
+};
+
+// tabs-section JS mobile
+
+function openAccordion(cityName) {
+
+  var i, tabcontent;
+
+  tabcontent = document.getElementsByClassName("tabcontent-mobile");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  document.getElementById(cityName).style.display = ((document.getElementById(cityName).style.display != "flex") ? "flex" : "none");
+  
 };
 
 //features JS

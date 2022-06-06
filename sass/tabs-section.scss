@@ -17,11 +17,13 @@
             justify-content: space-between;
             overflow: hidden;
             border-bottom: 1px solid $tab-border;
+            @media (max-width: $tablet-breakpoint) {
+                display: none;
+            }
             & button {
                 flex-flow: row nowrap;
                 color: $tab-buttons;
                 background-color: inherit;
-                float: left;
                 border: none;
                 outline: none;
                 cursor: pointer;
@@ -74,5 +76,69 @@
             // }
         }
     }
+    .tabs-section-tab-mobile {
+        display: none;
+        margin: auto;
+        color: $secondary-text; 
+        background-color: $card-body;
+        @media (max-width: $tablet-breakpoint) {
+            display: flex;
+            flex-flow: column nowrap;
+        }    
+        .tab-mobile {
+            // border-bottom: 1px solid $tab-border;
+            border: 1px solid $border;
+            border-radius: 5px;
+            margin: .65rem 0;
+            .tablinks-mobile {
+                display: flex;
+                flex-direction: column;
+                color: $card-header;
+                width: 100%;
+                padding: .95rem;
+                font-size: .813rem;
+                background-color: $background-grey;
+                border-bottom: 1px solid $border;
+                border-radius: 5px;
+                border-left: 4px solid $modal-button;
+                border-top: 0;
+                border-right: 0;
+            }
+            .tabcontent-mobile {
+                display: none;
+                flex-flow: column nowrap;
+                -webkit-transform: scaleY(1);
+	            -o-transform: scaleY(1);
+             	-ms-transform: scaleY(1);
+	            transform: scaleY(1);
+                -webkit-transform-origin: bottom;
+	            -o-transform-origin: bottom;
+	            -ms-transform-origin: bottom;
+	            transform-origin: bottom;
 
+	            -webkit-transition: -webkit-transform 0.4s ease-out;
+	            -o-transition: -o-transform 0.4s ease;
+	            -ms-transition: -ms-transform 0.4s ease;
+	            transition: transform 0.4s ease;
+                .tabs-section-tab-text {
+                    padding: 1.25rem;
+                    & h1 {
+                        font-size: 1.563rem;
+                        padding: 1.875rem 0 .625rem 0; 
+                        margin-bottom: .5rem;
+                        color: $secondary-text;
+                        text-align: left;
+                    }
+                    & p {
+                        font-size: 0.9rem;
+                        margin: .625rem 0 .625rem 0;
+                        text-align: left;
+                    }
+                }
+                .active {
+                    display: flex;
+                }
+            }
+        }
+    }
 }
