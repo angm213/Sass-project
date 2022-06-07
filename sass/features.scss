@@ -5,6 +5,9 @@
     width: 60%;
     text-align: center;
     padding-top: 9rem;
+    @media (max-width: $tablet-breakpoint) {
+        width: 70%;        
+    }
     .demo-button {
         margin: 15px auto;
     }
@@ -41,6 +44,11 @@
             border-radius: 6px;
             border: 1px solid $border-box;
             flex-flow: row wrap;
+            @media (max-width: $tablet-breakpoint) {
+                flex-flow: column nowrap;
+                flex: 1 0 100%;
+                align-items: center;
+            }
             .features-box-img {
                 padding-right: 15px;
                 vertical-align: middle;
@@ -52,6 +60,9 @@
                 flex: 2 0 60%;
                 display: flex;
                 padding-left: 15px;
+                @media (max-width: $tablet-breakpoint) {
+                    flex: 1 0 20%;
+                }
                 & h4 {
                     margin: 0;
                     margin-block-start: 0;

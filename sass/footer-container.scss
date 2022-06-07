@@ -6,11 +6,17 @@
     padding: 2rem 0;
     display: flex;
     @media (max-width: $tablet-breakpoint) {
-        width: 90%;
+        width: 70%;
+        flex-flow: row wrap;
+        :nth-child(3) {
+            padding-top: .9rem;
+        }
     }
     .footer-container-nav {
-        
         flex: 1 0 10%;
+        @media (max-width: $tablet-breakpoint) {
+            flex: 0 0 50%;
+        }
         h5 {
            color: $primary-text;
            font-size: 15px;
@@ -34,3 +40,4 @@
         }
     }
 }
+

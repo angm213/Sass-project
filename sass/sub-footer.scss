@@ -9,6 +9,10 @@
         margin: auto;
         display: flex;
         padding: 4rem 2rem;
+        @media (max-width: $tablet-breakpoint) {
+            width: 75%;
+            flex-flow: column nowrap;
+        }
         .sub-footer-right {
             overflow: hidden;
             border-radius: 100% 0 0 0;
