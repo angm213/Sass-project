@@ -5,6 +5,9 @@
     margin: 0 auto 2rem auto;
     cursor: grab;
     padding-top: 2rem;
+    @media (max-width: $mobile-breakpoint) {
+        width: 90%;
+    } 
     .slick-arrows {
         position: relative;
         list-style: none;

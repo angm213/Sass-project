@@ -45,6 +45,12 @@
         padding: 1rem 0;
         display: flex;
         justify-content: space-around;
+        @media(max-width: $tablet-breakpoint) {
+            height: 15rem;
+            justify-content: center;
+            width: 70%;
+            box-shadow: none;
+        }
         .slider-fade {
             display: flex;
             flex-direction: row;
@@ -58,6 +64,9 @@
             animation-iteration-count: infinite;
             animation-duration: 10s;
             animation-direction: alternate;
+            @media (max-width: $tablet-breakpoint) {
+                flex-flow: column nowrap;
+            }
         }
         .slider-fade-2 {
             display: flex;
@@ -72,9 +81,15 @@
             animation-iteration-count: infinite;
             animation-duration: 10s;
             animation-direction: alternate;
+            @media (max-width: $tablet-breakpoint) {
+                flex-flow: column nowrap;
+            }
         }
         .slider-image {
             padding: 0 .938rem 1.25rem .938rem;
+            @media (max-width: $tablet-breakpoint) {
+                padding: 0;
+            }
         }
     }
 }

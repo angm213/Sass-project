@@ -18,6 +18,9 @@
         @media (max-width: $tablet-breakpoint) {
             width: 60%;
             }
+        @media (max-width: $mobile-breakpoint) {
+            width: 90%;
+        } 
         & h1 {
             margin: 0;
             font-weight: 700;
@@ -49,6 +52,9 @@
         @media (max-width: $tablet-breakpoint) {
             width: 50%;
             }
+        @media (max-width: $mobile-breakpoint) {
+            width: 85%;
+        }    
         .card-row {
             display: flex;
             @media (max-width: $tablet-breakpoint) {

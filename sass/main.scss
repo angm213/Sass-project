@@ -25,13 +25,20 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding: 10px 0 10px 0;
+        @media (max-width: $tablet-breakpoint) {
+            margin-right: 2.5rem;
+        }
         .top-section-content {
            margin-right: 19.8vw;
            display: flex;
            justify-content: flex-end;
            color: $background-white;
-           @media (max-width: $tablet-breakpoint) {
-            margin-right: 2.5rem;
+            @media (max-width: $tablet-breakpoint) {
+                margin-right: 2.5rem;
+            }
+            @media (max-width: $mobile-breakpoint) {
+                justify-content: center;
+                margin-right: 0;
             }
            & a {
                text-decoration: none;
@@ -71,6 +78,9 @@ body {
             flex-flow: column nowrap;
             width: 75%;
             align-items: center;
+        }
+        @media (max-width: $mobile-breakpoint) {
+            width: 90%;
         }
             .footer-text {
                 & p {
