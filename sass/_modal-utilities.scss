@@ -30,6 +30,23 @@
                 transform: translateY(25vh);
             }
         }
+        @media (max-width: $tablet-breakpoint) {
+            width: 90%;
+            height: 90%;
+            overflow: scroll;
+            padding: 0 .3rem .33rem 3.5rem;
+            @keyframes translation {
+                from {
+                    transform: translateY(-5vh);
+                }
+                to {
+                    transform: translateY(5vh);
+                }
+            }
+        }
+        @media (max-width: $mobile-breakpoint) {
+            padding: 0 .3rem .33rem .7rem;
+        }
     }
     .demo-modal-header {
         display: flex;
@@ -40,6 +57,10 @@
             color: $primary-text;
             font-weight: 900;
             line-height: 1.5;
+            @media (max-width: $tablet-breakpoint) {
+                line-height: 1.3;
+                padding-top: .5rem;
+            }
         }
         span {
             font-size: 1.9rem;
@@ -50,6 +71,9 @@
             margin-right: -1.5rem;
             margin-bottom: 1.7rem;
             font-weight: 500;
+            @media (max-width: $tablet-breakpoint) {
+                margin-right: -.5rem;
+            }
             cursor: pointer;
             &:hover {
                 background-color: $modal-button;
@@ -78,11 +102,17 @@
     .modal-row {
         display: flex;
         flex-flow: row nowrap;
+        @media (max-width: $tablet-breakpoint) {
+            flex-direction: column;
+        }
         .form-input {
             flex: 2 0 50%;
             min-height: 50px;
             margin-bottom: 1rem;
             padding-right: 0.938rem;
+            @media (max-width: $tablet-breakpoint) {
+                padding-right: 0;
+            }
             input {
                 border-radius: 4px;
                 border: none;
@@ -106,6 +136,9 @@
                 padding: .375rem .75rem;
                 font: inherit;
                 border: 2px solid $form-input;
+                @media(max-width: $tablet-breakpoint) {
+                    width: 89.5%
+                }
                 &:focus {
                     background-color: $background-white;
                     outline: 2px solid $form-input;
@@ -120,6 +153,9 @@
         justify-content: flex-end;
         align-items: center;
         margin: 2rem 0 1rem 0;
+        @media (max-width: $tablet-breakpoint) {
+            flex-direction: column;
+        }
         p {
             font-size: .875rem;
             padding-right: 1.188rem;
@@ -162,6 +198,12 @@ textarea::placeholder {
         height: 400px;
         display: flex;
         align-items: flex-end;
+        @media (max-width: $tablet-breakpoint) {
+            width: 90%;
+            height: 90%;
+            overflow: scroll;
+            padding: 0 .3rem 1rem .3rem;
+        }
         span {
             width: 20px;
             font-size: 1.9rem;

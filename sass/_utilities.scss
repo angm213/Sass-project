@@ -44,12 +44,12 @@
             width: 90%;
             justify-content: space-between;
             }
-        @media (max-width: $mobile-breakpoint) {
+        @media (max-width: $nav-breakpoint) {
             width: 100%;
             align-content: center;
             flex-direction: column;
             margin: 0;
-        }      
+        }       
         & a {
             height: min-content;
             vertical-align: middle;
@@ -76,6 +76,20 @@
     transition: background-color 200ms linear;
     box-shadow: 0px 6px 5px 0px $sticky-box-shadow;
     z-index: 999;
+    @media (max-width: $small-mobile) {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    & button {
+        margin-right: 10px;
+        @media (max-width: $mobile-breakpoint) {
+            margin-right: 0px;
+        } 
+        @media (max-width: $small-mobile) {
+            margin-top: 7px;
+        }
+    }
 }
 
 .cookie-msg {
@@ -267,6 +281,14 @@ img {
     top: 6.2rem;
 	right: 28.9rem;
     display: none;
+    @media (max-width: $tablet-breakpoint) {
+        top: 25%;
+	    left: 35%;
+        }
+    @media (max-width: $mobile-breakpoint) {
+        top: 35%;
+	    left: 10%;
+    } 
 }
 
 .popover-g2 {
@@ -274,6 +296,14 @@ img {
     top: 6.2rem;
 	right: 20.5rem;
     display: none;
+    @media (max-width: $tablet-breakpoint) {
+        top: 25%;
+	    left: 50%;
+        }
+    @media (max-width: $mobile-breakpoint) {
+        top: 35%;
+	    left: 30%;
+    }
 }
 
 .pop-1-translated {
@@ -281,6 +311,14 @@ img {
     top: 3.7rem;
 	right: 39.7rem;
     display: none;
+    @media (max-width: $tablet-breakpoint) {
+        top: 25%;
+        left: 15%;
+        }
+    @media (max-width: $mobile-breakpoint) {
+        top: 25%;
+        left: 1%;
+    }
 }
 
 .pop-2-translated {
@@ -288,4 +326,12 @@ img {
     top: 3.7rem;
 	right: 31.5rem;
     display: none;
+    @media (max-width: $tablet-breakpoint) {
+        top: 15%;
+        left: 35%;
+        }
+    @media (max-width: $mobile-breakpoint) {
+        top: 25%;
+        left: 17%;
+    }
 }

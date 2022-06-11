@@ -8,6 +8,9 @@
     @media (max-width: $tablet-breakpoint) {
         height: 500px;
     }
+    @media (max-width: $mobile-breakpoint) {
+        height: 700px;
+    }
     .testimonials-box {
         position: relative;
         display: flex;
@@ -24,6 +27,8 @@
         }
         @media (max-width: $mobile-breakpoint) {
             width: 90%;
+            flex-flow: column nowrap;
+            height: 600px;
         }
         .testimonials-box-image {
             position: relative;
@@ -35,6 +40,10 @@
                 flex: 0 0 30%;
                 margin-top: -69px;
             }
+            @media (max-width: $mobile-breakpoint) {
+                padding-bottom: 0;
+                margin-top: -93px;
+            } 
         }
         .testimonials-box-text {
             align-items: flex-end;
@@ -42,12 +51,19 @@
             @media (max-width: $tablet-breakpoint) {
                 padding: 1.8rem 2.438rem 0 1.5rem; 
             }
+            @media (max-width: $mobile-breakpoint) {
+                padding-top: 0;
+                flex: 1 0 100%;
+            }  
             h2 {
-               color: $primary-text;
-               font-size: 1.87rem;
-               margin: 1rem auto;
-               text-align: left;
-               line-height: 2.8rem; 
+                color: $primary-text;
+                font-size: 1.87rem;
+                margin: 1rem auto;
+                text-align: left;
+                line-height: 2.8rem; 
+                @media (max-width: $small-mobile) {
+                    line-height: 2rem;
+                }
             }
             h6 {
                 font-size: 1.1rem;
