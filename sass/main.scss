@@ -29,10 +29,16 @@ body {
             margin-right: 2.5rem;
         }
         .top-section-content {
-           margin-right: 19.8vw;
-           display: flex;
-           justify-content: flex-end;
-           color: $background-white;
+            margin-right: 19.8vw;
+            display: flex;
+            justify-content: flex-end;
+            color: $background-white;
+            @media (max-width: $fourk) {
+                margin-right: 32.8rem;
+            }
+            @media (max-width: $laptop-breakpoint) {
+                margin-right: 7.1rem;
+            }
             @media (max-width: $tablet-breakpoint) {
                 margin-right: 2.5rem;
             }
@@ -80,6 +86,9 @@ body {
             align-items: center;
         }
         @media (max-width: $mobile-breakpoint) {
+            width: 90%;
+        }
+        @media (max-width: $laptop-breakpoint) {
             width: 90%;
         }
             .footer-text {

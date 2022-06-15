@@ -5,6 +5,9 @@
     width: 60%;
     margin: auto;
     text-align: center;
+    @media (max-width: $laptop-breakpoint) {
+        width: 90%;
+    }
     @media (max-width: $tablet-breakpoint) {
         width: 70%;
     }

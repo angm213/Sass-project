@@ -40,9 +40,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $laptop-breakpoint) {
+            width: 80%;
+            }
         @media (max-width: $tablet-breakpoint) {
             width: 90%;
-            justify-content: space-between;
             }
         @media (max-width: $nav-breakpoint) {
             width: 100%;
@@ -76,6 +78,7 @@
     transition: background-color 200ms linear;
     box-shadow: 0px 6px 5px 0px $sticky-box-shadow;
     z-index: 999;
+    .navbar-buttons {
     @media (max-width: $small-mobile) {
         display: flex;
         flex-flow: column wrap;
@@ -85,9 +88,10 @@
         margin-right: 10px;
         @media (max-width: $mobile-breakpoint) {
             margin-right: 0px;
-        } 
-        @media (max-width: $small-mobile) {
-            margin-top: 7px;
+            } 
+            @media (max-width: $small-mobile) {
+                margin-top: 7px;
+            }
         }
     }
 }
@@ -97,6 +101,7 @@
     bottom: 70px;
     left: 30px;
     line-height: normal;
+    z-index: 30;
     a {
         position: relative;
         text-decoration: none;
@@ -196,6 +201,7 @@ img {
     border-radius: 15px;
     font-size: 1.8rem;
     transition: transform 300ms ease-in-out 0s, box-shadow 300ms ease-in-out 0s;
+    z-index: 30;
     cursor: pointer;
     &:hover {
         box-shadow: -3px 5px $sticky-box-shadow;
@@ -240,6 +246,16 @@ img {
 	transform-origin: top left;
 
     z-index: 10;
+
+    @media (max-width: $tablet-breakpoint) {
+        width: 50%;
+    }
+    @media (max-width: $laptop-breakpoint) {
+        width: 30%;
+    }
+    // @media (max-width: $uhd) {
+    //     width: 20%;
+    // } 
 
     img {
         padding-left: .938rem;
@@ -286,9 +302,18 @@ img {
 	    left: 35%;
         }
     @media (max-width: $mobile-breakpoint) {
-        top: 35%;
-	    left: 10%;
-    } 
+        top: 24%;
+	    left: 5%;
+    }
+    @media (max-width: $laptop-breakpoint) {
+        left: 53%;
+    }
+    // @media (max-width: $uhd) {
+    //     left: 54.6%;
+    // }
+    // @media (max-width: $fourk) {
+    //     left: 64%;
+    // }  
 }
 
 .popover-g2 {
@@ -301,9 +326,18 @@ img {
 	    left: 50%;
         }
     @media (max-width: $mobile-breakpoint) {
-        top: 35%;
-	    left: 30%;
+        top: 24%;
+	    left: 35%;
     }
+    @media (max-width: $laptop-breakpoint) {
+        left: 66%;
+    }
+    // @media (max-width: $uhd) {
+    //     left: 63.7%;
+    // }
+    // @media (max-width: $fourk) {
+    //     left: 69%;
+    // }   
 }
 
 .pop-1-translated {
@@ -314,11 +348,20 @@ img {
     @media (max-width: $tablet-breakpoint) {
         top: 25%;
         left: 15%;
-        }
-    @media (max-width: $mobile-breakpoint) {
-        top: 25%;
-        left: 1%;
     }
+    @media (max-width: $mobile-breakpoint) {
+        top: 17%;
+        left: 25%;
+    }
+    @media (max-width: $laptop-breakpoint) {
+        left: 37%;
+    }
+    // @media (max-width: $uhd) {
+    //     left: 42.6%;
+    // }
+    // @media (max-width: $fourk) {
+    //     left: 57.3%;
+    // }  
 }
 
 .pop-2-translated {
@@ -329,9 +372,18 @@ img {
     @media (max-width: $tablet-breakpoint) {
         top: 15%;
         left: 35%;
-        }
+    }
     @media (max-width: $mobile-breakpoint) {
         top: 25%;
-        left: 17%;
+        left: 25%;
     }
+    @media (max-width: $laptop-breakpoint) {
+        left: 49%;
+    }
+    // @media (max-width: $uhd) {
+    //     left: 51.5%;
+    // }
+    // @media (max-width: $fourk) {
+    //     left: 62.4%;
+    // }  
 }

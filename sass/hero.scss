@@ -54,7 +54,10 @@
             }
         @media (max-width: $mobile-breakpoint) {
             width: 85%;
-        }    
+        }
+        @media (max-width: $laptop-breakpoint) {
+            width: 60%;
+        }     
         .card-row {
             display: flex;
             @media (max-width: $tablet-breakpoint) {
@@ -84,7 +87,10 @@
                 }
                 @media (max-width: $tablet-breakpoint) {
                     text-align: center;
-                    }
+                }
+                @media (max-width: $laptop-breakpoint) {
+                    padding-right: 35px;
+                }    
             }
             .terms-link {      
                 padding-top: 15px;
@@ -109,13 +115,21 @@
         }
         .beeimage {
             position: absolute;
-            left: 1275px;
-            top: 465px;
+            left: 66vw;
+            top: 48vh;
             z-index: 1;
             @media (max-width: $tablet-breakpoint) {
                 position: inherit;
                 margin: auto;
             }
+            @media (max-width: $laptop-breakpoint) {
+                left: 75vw;
+                top: 83vh;
+            }
+            // @media (max-width: $fourk) {
+            //     left: 68vw;
+            //     top: 83vh;
+            // }
         }
     }
 }
