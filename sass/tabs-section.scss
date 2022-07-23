@@ -81,9 +81,6 @@
                      padding-top: 20px;
                 }
             }
-            // .active {
-            //     display: flex;
-            // }
         }
     }
     .tabs-section-tab-mobile {
@@ -147,12 +144,6 @@
                         margin: .625rem 0 .625rem 0;
                         text-align: left;
                     }
-                }
-                .active {
-                    @media (max-width: $mobile-breakpoint) {
-                        display: none;
-                    }
-                    display: flex;
                 }
             }
         }

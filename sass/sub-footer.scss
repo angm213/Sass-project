@@ -47,6 +47,9 @@
                     list-style: none;
                     flex-flow: row wrap;
                     li {
+                        @media (max-width: $mobile-breakpoint) {
+                            width: 300px;
+                        }
                         // flex: 0 2 40%;
                         padding-right: 10px;
                         a {

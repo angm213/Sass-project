@@ -16,7 +16,7 @@
     background-color: $primary-text;
     padding-top: 1.875rem;
     margin-top: 2rem;
-    height: 16.25rem; 
+    // height: 16.25rem; 
     .testimonials-box {
         @media (min-width: $laptop-breakpoint) {
             width: 90%;
@@ -28,7 +28,7 @@
         @media (max-width: $mobile-breakpoint) {
             width: 90%;
             flex-flow: column nowrap;
-            height: 37.5rem;
+            height: 41rem;
         }
         @media (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint) {
             height: 26rem; 
@@ -148,7 +148,7 @@
 
 .testimonials-section:after {
     @media (max-width: $mobile-breakpoint) {
-        margin-top: -19px;
+        margin-top: -2rem;
         transform: skewY(178deg);
     }
     @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {

@@ -193,8 +193,11 @@ img {
 }
 
 .chat-button {
+    @media (max-width: $mobile-breakpoint) {
+        display: none;
+    }
     position: fixed;
-    bottom: 3rem;
+    bottom: 5rem;
     right: 2rem;
     padding: 1.2rem 1.07rem 1rem 1.07rem;
     background-color: $modal-button;

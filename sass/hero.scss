@@ -122,10 +122,10 @@
                 position: inherit;
                 margin: auto;
             }
-            @media (max-width: $laptop-breakpoint) {
-                left: 75vw;
-                top: 83vh;
-            }
+            // @media (min-width: $laptop-breakpoint) {
+            //     left: 66vw;
+            //     top: 48vh;
+            // }
             // @media (max-width: $fourk) {
             //     left: 68vw;
             //     top: 83vh;
