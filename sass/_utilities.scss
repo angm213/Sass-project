@@ -98,8 +98,8 @@
 
 .cookie-msg {
     position: fixed;
-    bottom: 70px;
-    left: 30px;
+    bottom: 4.375rem;
+    left: 3rem;
     line-height: normal;
     z-index: 30;
     a {
@@ -194,8 +194,8 @@ img {
 
 .chat-button {
     position: fixed;
-    bottom: 40px;
-    right: 30px;
+    bottom: 3rem;
+    right: 2rem;
     padding: 1.2rem 1.07rem 1rem 1.07rem;
     background-color: $modal-button;
     border-radius: 15px;

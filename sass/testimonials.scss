@@ -1,23 +1,38 @@
 @import '_variables';
 
 .testimonials-section {
+    @media (max-width: $mobile-breakpoint) {
+        height: 43.75rem;
+    }
+    @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+        height: 31.25rem;
+    }
+    @media (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint) {
+        height: 24rem;
+    }
+    @media (min-width: $laptop-breakpoint) {
+        height: 18.75rem;
+    }
     background-color: $primary-text;
     padding-top: 1.875rem;
     margin-top: 2rem;
-    height: 260px;
-    @media (max-width: $tablet-breakpoint) {
-        height: 500px;
-    }
-    @media (max-width: $mobile-breakpoint) {
-        height: 700px;
-    }
-    @media (max-width: $laptop-breakpoint) {
-        height: 300px;
-    }
-    @media (max-width: $uhd) {
-        height: 300px;
-    }
+    height: 16.25rem; 
     .testimonials-box {
+        @media (min-width: $laptop-breakpoint) {
+            width: 90%;
+        }
+        @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+            width: 90%;
+            height: 25.625rem;
+        }
+        @media (max-width: $mobile-breakpoint) {
+            width: 90%;
+            flex-flow: column nowrap;
+            height: 37.5rem;
+        }
+        @media (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint) {
+            height: 26rem; 
+        }
         position: relative;
         display: flex;
         width: 60%;
@@ -26,63 +41,60 @@
         border-radius: 10px;
         box-shadow: 0px 0px 8px 0px rgb(55 55 55 / 10%);
         z-index: 10;
-        height: 310px;
-        @media (max-width: $laptop-breakpoint) {
-            width: 90%;
-        }
-        @media (max-width: $tablet-breakpoint) {
-            width: 90%;
-            height: 410px;
-        }
-        @media (max-width: $mobile-breakpoint) {
-            width: 90%;
-            flex-flow: column nowrap;
-            height: 600px;
-        }
+        height: 19.375rem;
         .testimonials-box-image {
+            @media (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint) {
+                flex: 0 0 30%;
+                margin-top: -4rem;
+            }
+            @media (max-width: $mobile-breakpoint) {
+                padding-bottom: 0;
+                margin-top: -5.813rem;
+            }
+            @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+                padding-bottom: 0;
+                margin-top: -2rem;
+            }
+            @media (min-width: $laptop-breakpoint) and (max-width: $uhd) {
+                flex: 0 1 45%;
+            }
+            @media (min-width: $uhd) {
+                flex: 0 1 20%;
+            }
+            // @media (min-width: $fourk) {
+            //     flex: 0 1 20%;
+            // }
             position: relative;
             margin-top: -70px;
             padding: 2rem 0.938rem;
             max-width: 100%;
-            flex: 0 1 45%;
-            @media (max-width: $tablet-breakpoint) {
-                flex: 0 0 30%;
-                margin-top: -69px;
-            }
-            @media (max-width: $mobile-breakpoint) {
-                padding-bottom: 0;
-                margin-top: -93px;
-            }
-            @media (max-width: $laptop-breakpoint) {
-                flex: 0 1 70%;
-            }
-            // @media (max-width: $uhd) {
-            //     flex: 0 1 85%;
-            // }
-            // @media (max-width: $fourk) {
-            //     flex: 0 1 20%;
-            // }
-             
+            flex: 0 1 45%;   
         }
         .testimonials-box-text {
-            align-items: flex-end;
-            padding: 1.8rem 2.438rem 0 4rem;
-            @media (max-width: $tablet-breakpoint) {
+            @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
                 padding: 1.8rem 2.438rem 0 1.5rem; 
+            }
+            @media (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint) {
+                padding: 0 1.5rem 0 1.5rem; 
             }
             @media (max-width: $mobile-breakpoint) {
                 padding-top: 0;
                 flex: 1 0 100%;
-            }  
+            }
+            // @media (min-width: $laptop-breakpoint) {
+            //     padding: 0 1.5rem 0 1.5rem; 
+            // }
+            align-items: flex-end;
+            padding: 1.8rem 2.438rem 0 4rem; 
             h2 {
+                @media (max-width: $small-mobile) {
+                    line-height: 1.7rem;
+                }
                 color: $primary-text;
                 font-size: 1.87rem;
                 margin: 1rem auto;
                 text-align: left;
                 line-height: 2.8rem; 
-                @media (max-width: $small-mobile) {
-                    line-height: 1.7rem;
-                }
             }
             h6 {
                 font-size: 1.1rem;
@@ -135,6 +147,27 @@
 }
 
 .testimonials-section:after {
+    @media (max-width: $mobile-breakpoint) {
+        margin-top: -19px;
+        transform: skewY(178deg);
+    }
+    @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+        margin-top: -1.5rem; 
+    }
+    @media (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint) {
+        margin-top: -9rem;
+    }
+    @media (min-width: $laptop-breakpoint) {
+        margin-top: -7rem;
+        transform: skewY(358.7deg);
+    }
+    // @media (min-width: $uhd) {
+    //     margin-top: -113px;
+    // }
+    @media (min-width: $fourk) {
+        height: 6.25rem;
+        margin-top: -9rem;
+    }
     content: "";
     width: 100%;
     height: 60px;
@@ -143,20 +176,6 @@
     z-index: 1;
     display: block;
     margin-top: -148px;
-    @media (max-width: $tablet-breakpoint) {
-        margin-top: -19px;
-        transform: skewY(178deg);
-    }
-    @media (max-width: $laptop-breakpoint) {
-        margin-top: -120px;
-    }
-    // @media (max-width: $uhd) {
-    //     margin-top: -113px;
-    // }
-    // @media (max-width: $fourk) {
-    //     height: 100px;
-    //     margin-top: -180px;
-    // }
 }
 
 

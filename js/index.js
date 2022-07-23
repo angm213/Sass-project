@@ -8,6 +8,7 @@ var featureBoxToggle = document.querySelector(".features-boxes-toggle");
 var featureHide = document.querySelector(".toggle-features-hide");
 var demoModal = document.querySelector(".demo-modal");
 var vModal = document.querySelector("#video-modal");
+const vw = window.innerWidth;
 
 // sticky nav JS
 
@@ -58,10 +59,12 @@ function vmodalHide() {
 
 // tabs-section JS
 
-// function myFunction(evt) {
-//   document.getElementById("salesIncrease").style.display = "flex";
-//   evt.currentTarget.className += " active";
-// }
+function myFunction(evt) {
+  if (vw > 1023) {
+    document.getElementById("salesIncrease").style.display = "flex";
+    evt.currentTarget.className += " active";
+  } else document.getElementById("salesIncrease").style.display = "none";
+}
 
 window.onload = myFunction();
 
@@ -93,7 +96,7 @@ function openAccordion(cityName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-
+  
   document.getElementById(cityName).style.display = ((document.getElementById(cityName).style.display != "flex") ? "flex" : "none");
   
 };

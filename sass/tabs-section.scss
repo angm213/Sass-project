@@ -63,6 +63,7 @@
                     background-image: url("https://angm213.github.io/Sass-project/public/images/tabbottomline.png");
                     background-repeat: no-repeat;
                     background-position-y: bottom;
+                    line-height: 2rem;
                 }
                 p {
                     color: $navlinks;
@@ -129,11 +130,14 @@
 	            -o-transition: -o-transform 0.4s ease;
 	            -ms-transition: -ms-transform 0.4s ease;
 	            transition: transform 0.4s ease;
+                .tabs-section-tab-right {
+                    margin: 1rem auto;
+                }
                 .tabs-section-tab-text {
                     padding: 1.25rem;
                     & h1 {
                         font-size: 1.563rem;
-                        padding: 1.875rem 0 .625rem 0; 
+                        padding: 1.5rem 0 .625rem 0; 
                         margin-bottom: .5rem;
                         color: $secondary-text;
                         text-align: left;
@@ -145,6 +149,9 @@
                     }
                 }
                 .active {
+                    @media (max-width: $mobile-breakpoint) {
+                        display: none;
+                    }
                     display: flex;
                 }
             }
